@@ -4,7 +4,7 @@ Dieses Repository enthält den Code, der für die Erstellung des Consultant-Prof
 
 ## Allgemeine Funktionsweise
 
-Das Script `script.js` geht in den Ordner `input` und ließt die erste Datei mit Endung `.yaml`, die es findet. Diese Datei enthält die Daten des Profils, die das Script nutzt, um zusammen mit den HTML/CSS Dateien die Webseite zu erstellen, von dem aus man das Profil auch als PDF drucken kann. Die Daten des Profils in einer eigenen Text-Datei auszulagern, ermöglicht es mehrere Profile, oder auch mehrere Versionen desselben Profils, mit einer einheitlichen Struktur und einem einheitlichen Design zu verwalten. Änderungen am Design oder an der Struktur müssen nur an einer zentralen Stelle vorgenommen werden, anstatt separat in jedem einzelnen Profil. Die Profile im neuen Design müssten allerdings neu ausgedruckt werden.
+Das Script `script.js` geht in den Ordner `input` und liest die erste Datei mit Endung `.yaml`, die es findet. Diese Datei enthält die Daten des Profils, die das Script nutzt, um zusammen mit den HTML/CSS Dateien die Webseite zu erstellen, von dem aus man das Profil auch als PDF drucken kann. Die Daten des Profils in einer eigenen Text-Datei auszulagern, ermöglicht es mehrere Profile, oder auch mehrere Versionen desselben Profils, mit einer einheitlichen Struktur und einem einheitlichen Design zu verwalten. Änderungen am Design oder an der Struktur müssen nur an einer zentralen Stelle vorgenommen werden, anstatt separat in jedem einzelnen Profil. Die Profile im neuen Design müssten allerdings neu ausgedruckt werden.
 
 ## Workflow
 
@@ -21,39 +21,39 @@ In jedem Fall muss man sich den Code herunterladen. Dies geht über den grünen 
 
 ### Textbasierter Workflow
 
-1. Nachdem die Dateien heruntergeladen und entpackt wurden, navigiere zum Ordner `input`. In diesem befindet sich alles was man braucht. 
+1. Nachdem die Dateien heruntergeladen und entpackt wurden, navigiere zum Ordner `input`. In diesem befindet sich alles, was man braucht. 
 2. Die Datei `micheal-scott-projekt.yaml` ist Michaels Profil in Text-Form.
 3. Öffne die `.yaml` Datei und versuche den Inhalt nachzuvollziehen.
-    - Am Besten ist es sich Visual Studio Code herunterzuladen und sich die Datei darin anzuschauen.
+    - Am besten ist es, sich Visual Studio Code herunterzuladen und sich die Datei darin anzuschauen.
     - Im Kapitel **Profil Formatierung** ist alles im Detail aufgeführt.
 4. Als Beispiel kann man sehen, dass in der Datei unter dem Punkt `portrait` auf das Bild namens `MichaelScott.png` verweist wird. Dieses Bild befindet sich im Unterordner `Michael-Scott`. Da wir uns im Ordner `input` befinden, sieht der volle Verweis folgendermaßen aus: `input/Micheal-Scott/MichaelScott.png`. 
-5. Nachdem alles nachvollzogen wurde, erstelle einen neuen Ordner und gebe ihn deinen Namen.
+5. Nachdem alles nachvollzogen wurde, erstelle einen neuen Ordner und gebe ihm deinen Namen.
 6. Nenne die Datei `micheal-scott-projekt.yaml` in deinen Namen um.
-7. Nutze die `.yaml` Datei und den Ordner mit deinem Namen um dein eigenes Profil zu erstellen.
+7. Nutze die `.yaml` Datei und den Ordner mit deinem Namen, um dein eigenes Profil zu erstellen.
     - Achte dabei auf die Formatierungen!
     - Lade nötige Bilder (Badges für Zertifikate oder Firmenlogos für Firmen) herunter und lege sie in den Unterordner mit deinem Namen ab.
     - Bei Unklarheiten kannst du dir die Datei `Michael-Scott/michael-scott-prozess.yaml` anschauen.
-8. Nachdem alles fertig ist, kannst du den `input` Ordner in eine zip Datei komprimieren und absenden.
+8. Nachdem alles fertig ist, kannst du den `input` Ordner in eine `.zip` Datei komprimieren und absenden.
 
 ### Webbasierter Workflow
 
-1. Installiere Visual Studio Code:
+1. Installiere Visual Studio Code (VSC):
     - https://code.visualstudio.com/
-2. Bei den Icons links clicke auf *Extensions* und gebe in der suche "Live Server" ein.
+2. In VSC, bei den Icons links klicke auf *Extensions* und gebe in der Suche "Live Server" ein.
     - Finde und installiere die Erweiterung namens "Live Server" von "Ritwick Dey".
-3. Gehe zurück zum Explorer (oberstes Icon im Reiter links) und öffne den **webprofil** Ordner, den du von hier heruntergeladen und auf deinem PC entpackt hast. (File -> Open Folder...)
-4. Alle Dateien des Projekts müssten nun im linken Panel zu sehen sein, wie dieses `readme.md`, aber auch der `input` Ordner mit allen Profil-Dateien, usw.
-5. In dem blauen Streifen ganz unten auf der rechten Seite müsste sich ein Knopf befinden, auf dem "Go Live" steht. Clicke auf diesen Knopf.
-    - Es wird automatisch die Webseite auf deinem Standardbrowser geöffnet. Alle Änderungen, die jetzt gemacht und abgespeichert werden, werden automatisch hier angezeigt (es kann sein, dass man den live-server manchmal neu starten muss).
-    - Die Profile wurden alle mit **CHROME** designed! Um die Einheitlichkeit und Funktionsfähigkeit zu garantieren sollte entsprechend die neuste Version von Chrome verwendet werden. 
-        - Sollte Chrome nicht dein Standardbrowser sein, kannst du den link herauskopieren und in Chrome öffnen. Dieser müsste etwa so aussehen: `http://127.0.0.1:5500/index.html`
-6. Ist die Seite ersteinmal in Chrome geöffnet, drücke `f12` um die Console zu öffnen. Hier kommen eventuelle Hinweise und Warnmeldungen.
+3. In VSC, gehe zurück zum Explorer (oberstes Icon im Reiter links) und öffne den **webprofil** Ordner, den du von hier heruntergeladen und auf deinem PC entpackt hast. (File -> Open Folder...)
+4. Alle Dateien des Projekts müssten nun im linken Panel von VCS zu sehen sein, wie dieses `readme.md`, aber auch der `input` Ordner mit allen Profil-Dateien, usw.
+5. In VSC, in dem blauen Streifen ganz unten auf der rechten Seite müsste sich ein Knopf befinden, auf dem "Go Live" steht. Klicke auf diesen Knopf.
+    - Es wird automatisch die Webseite auf deinem Standardbrowser geöffnet. Alle Änderungen, die jetzt in VSC gemacht und abgespeichert werden, werden automatisch hier angezeigt (es kann sein, dass man den live-server manchmal neu starten muss).
+    - Die Profile wurden alle mit **CHROME** entworfen! Um die Einheitlichkeit und Funktionsfähigkeit zu garantieren, sollte entsprechend die neuste Version von Chrome verwendet werden. 
+        - Sollte Chrome nicht dein Standardbrowser sein, kannst du den Link herauskopieren und in Chrome öffnen. Dieser müsste etwa so aussehen: `http://127.0.0.1:5500/index.html`
+6. Ist die Seite erst einmal in Chrome geöffnet, drücke `f12`, um dessen Konsole zu öffnen. Hier kommen eventuelle Hinweise und Warnmeldungen.
 8. Gehe nun genau so vor wie im oberen Unterkapitel **Textbasierter Workflow** und beobachte währenddessen das Ergebnis in Chrome. 
-9. Beachte, dass das Script nur die `.yaml` Datei liesst, die sich direkt im `input` Ordner befindet. 
-    - Du kannst mehrere Versionen deines Profils erzeugen und sie alle unterschiedlich benennen. Lagere diejenigen, die du aktuell nicht benötigst in den Unterordner mit deinem Namen ab und ziehe jeweils nur das gewünschte Profil in den `input` Ordner heraus.
-10. Nach dem absenden, kannst du auch das Profil vom Browser aus mit `command + P` oder `control + P` als PDF drucken.
+9. Beachte, dass das Script nur die `.yaml` Datei liest, die sich direkt im `input` Ordner befindet. 
+    - Du kannst mehrere Versionen deines Profils erzeugen und sie alle unterschiedlich benennen. Lagere diejenigen, die du aktuell nicht benötigst, in den Unterordner mit deinem Namen ab und ziehe jeweils nur das gewünschte Profil in den `input` Ordner heraus.
+10. Nach dem Absenden kannst du auch das Profil vom Browser aus mit `command + P` oder `control + P` als PDF drucken.
     - Lasse die Ränder auf Standard. 
-    - Das Häckchen bei Kopf- und Fußzeilen kann weg, jedoch sollten die Hintergrundgrafiken aktiviert bleiben.
+    - Das Häkchen bei Kopf- und Fußzeilen kann weg, jedoch sollten die Hintergrundgrafiken aktiviert bleiben.
 
 ## Profil Formatierung
 
@@ -79,7 +79,7 @@ languages:
 ```
 Jedes Listen-Element besteht in diesem Fall aus zwei `key-value`-Pärchen: einmal `name: "Deutsch"` und einmal `level: 3`. Jedes List-Element enthält seinen eigenen Bindestrich `  - `, egal wie viele `key-value`-Pärchen darin enthalten sein mögen. 
 
-Hierbei ist die **Einrückung** unbedingt zu beachten. Es ist auch wichtig, dass die Bindestriche von einer Leerzeichen gefolgt werden. Folgende Liste wäre also **ungültig**:
+Hierbei ist die **Einrückung** unbedingt zu beachten. Es ist auch wichtig, dass die Bindestriche von einem Leerzeichen gefolgt werden. Folgende Liste wäre also **ungültig**:
 ```
 languages:
 -name: "Deutsch"
@@ -88,7 +88,7 @@ level: 3
      level: 2
 ```
 
-List-Elemente können aber auch nur aus `values` bestehen. In diesen Fällen enthält ein `key` mehrere `values`, wie die `highlights` in den Projekten, oder den Paragraphen in `profile` (hierzu mehr im Unterkapitel **Profil-Spezifische Regelungen**)
+List-Elemente können aber auch nur aus `values` bestehen. In diesen Fällen enthält ein `key` mehrere `values`, wie die `highlights` in den Projekten, oder den Paragrafen in `profile` (hierzu mehr im Unterkapitel **Profil-Spezifische Regelungen**)
 
 #### Bilder
 
@@ -102,23 +102,23 @@ Beispiel URL:
 
 #### Kommentare
 
-Das Script ließt die `.yaml` Datei Zeile für Zeile und konvertiert das gelesen dabei in Programmierobjekte. Es gibt jedoch die Möglichkeit, dem Script zu sagen, dass er gewisse Zeilen überspringt. Dies macht man mit dem Ziffer-Symbol `#` - alles dahinter wird ignoriert.
+Das Script liest die `.yaml` Datei Zeile für Zeile und konvertiert das gelesen dabei in Programmierobjekte. Es gibt jedoch die Möglichkeit, dem Script zu sagen, dass er gewisse Zeilen überspringt. Dies macht man mit dem Ziffer-Symbol `#` - alles dahinter wird ignoriert.
 
-In Michaels Profil kann man sehen, dass zwei Zeilen mit dem `key` portrait vorkommen: einmal mit relativem Pfad und einmal mit einer URL. Dies ist aber nicht weiter problematisch, da eine der Beiden Zeilen "auskommentiert" wurden. Hierdurch kann man innerhalb einer Datei zwischen mehreren Bild-Quellen wechseln. 
+In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorkommen: einmal mit relativem Pfad und einmal mit einer URL. Dies ist aber nicht weiter problematisch, da eine der beiden Zeilen "auskommentiert" wurden. Hierdurch kann man innerhalb einer Datei zwischen mehreren Bild-Quellen wechseln. 
 
 Üblicherweise jedoch werden Kommentare genutzt um im Code Notizen hinzuzufügen.
 
 ### Profil-Spezifische Regelungen
 
-- Jeder `key`kommt genau einmal vor, es sei den er ist teil eines List-Elements.
+- Jeder `key`kommt genau einmal vor, es sei den er ist Teil eines List-Elements.
 - Manche `key`s sind optional und manche nicht.
     - Versuche möglichst alle auszufüllen. 
-    - Sollte ein `key` nicht ausgefüllt werden können - Beispielsweise wenn man nicht bei LinkedIn angemeldet ist - sollte man den `key` trotzdem stehen lassen und lediglich den `value` leer lassen, also so: `linkedin: ""`.
-    - Im Zweifel probiere es aus und beobachte wie es sich auf die Webseite auswirkt und was in der Konsole angezeigt wird.
+    - Sollte ein `key` nicht ausgefüllt werden können - beispielsweise wenn man nicht bei LinkedIn angemeldet ist - sollte man den `key` trotzdem stehen lassen und lediglich den `value` leer lassen, also so: `linkedin: ""`.
+    - Im Zweifel probiere es aus und beobachte, wie es sich auf die Webseite auswirkt und was in der Konsole angezeigt wird.
 - Es gibt nur die `key`s, die auch im Profil von Michael genannt wurden.
 - Die `key`s namens `level` erwarten eine Zahl von 1 bis 8. Dies ist nicht optional.
 - Listen dürfen beliebig viele List-Elemente enthalten.
-- Die Kurzbeschreibung ist teil des `key`s namens `profile`.
-    - Jeder Paragraph ist hier ein List-Item und wird in einer Zeile geschrieben.
+- Die Kurzbeschreibung ist Teil des `key`s namens `profile`.
+    - Jeder Paragraf ist hier ein List-Item und wird in einer Zeile geschrieben.
 - Bei den `key`s `projects` und `education` handelt es sich um komplexere Objekte, wobei im Grunde die gleichen Regeln gelten wie bisher, es ist nur auch hier wichtig auf die richtige Einrückung zu achten. 
     - Die `highlights` erwarten eine Liste an Text-`value`s, wovon jedes als ein eigener Punkt im Profil dargestellt.
