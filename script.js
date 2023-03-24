@@ -37,7 +37,13 @@ $(document).ready(function () {
                         } else {
                             $("#consultant-name").text(cv.name)
                             $('title').text(cv.name)
-                            $("#firstname").text(cv.name.replace(/ .*/, ''))
+                            let firstname = cv.name.split(' ')[0]
+                            if (firstname.endsWith('s') || firstname.endsWith('x') || firstname.endsWith('z')) {
+                                firstname += '’'
+                            } else {
+                                firstname += 's'
+                            }
+                            $("#firstname").text(firstname)
                         }
 
                         if (!cv.title) {
