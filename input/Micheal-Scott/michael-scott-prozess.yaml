@@ -1,0 +1,88 @@
+name: "Michael Scott"
+title: "Prozess Manager"
+email: "michael.scott@fairmar.com"
+tel: "+49 151 / 2353 1883"
+linkedin: "/in/michael-scott-a35b16212"
+location: "Frankfurt"
+portrait: "https://media.licdn.com/dms/image/C5603AQFvja-1mePjwA/profile-displayphoto-shrink_800_800/0/1639152779158?e=2147483647&v=beta&t=2gZG1lCCPUvQ2rsC6GdoaPQIDcNet5BdrPESsj5mRL8"
+# protrait: "/input/MichealScott.png"
+
+profile: 
+  - "Als erfahrener Prozess Manager verfüge ich über umfassende Kenntnisse in der Planung, Implementierung und Überwachung von Geschäftsprozessen. Meine Fähigkeiten umfassen die Identifizierung von Prozessoptimierungspotenzialen, die Entwicklung von Strategien zur Verbesserung von Geschäftsprozessen und die Umsetzung von Veränderungen, um die Effizienz und Effektivität von Prozessen zu steigern."
+  - "Ich bin in der Lage, cross-funktionale Teams zu leiten und zu motivieren, um gemeinsame Ziele zu erreichen. Darüber hinaus besitze ich hervorragende Analyse- und Problemlösungsfähigkeiten sowie eine ausgeprägte Fähigkeit, komplexe Informationen zu kommunizieren und zu präsentieren. Ich arbeite gerne in einem dynamischen Umfeld, bin sehr flexibel und habe eine hohe Belastbarkeit. Ich bringe auch eine kreative Perspektive auf Projekte ein und bin immer bereit, neue Ansätze auszuprobieren, um erfolgreich zu sein."
+
+skills:
+  - name: "Prozessanalyse und Prozessoptimierung"
+    level: 8
+  - name: "Projektmanagement"
+    level: 7
+  - name: "Datenanalyse"
+    level: 6
+  - name: "Compliance Management"
+    level: 5
+  - name: "Workflow-Management-Systeme, Business-Intelligence-Plattformen und Collaboration-Tools"
+    level: 4
+
+languages:
+  - name: "Deutsch"
+    level: 3
+  - name: "Englisch"
+    level: 2
+  - name: "Spanisch"
+    level: 1
+
+certificates:
+  - name: "Prince2 Foundation"
+    badge: "https://images.credly.com/images/e312fee3-7d04-48df-9daf-76d83940cd8a/image.png"
+  - name: "AWS Solutions Architect Associate"
+    badge: "https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/twitter_thumb_201604_image.png"
+  - name: "Scrum Master PSM I"
+    badge: "https://images.credly.com/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png"
+
+projects:
+  - name: "Nologo"
+    location: "Frankfurt"
+    logo: 
+    title: "Prozess Manager"
+    begin: "Jan 2020"
+    end: "Dec 2022"
+    highlights: 
+      - "Verbesserung der Effizienz von Produktionsprozessen durch Implementierung von Lean Six Sigma-Methoden"
+      - "Reduzierung der Durchlaufzeit von Projekten durch die Implementierung von Projektmanagement-Tools wie Agile oder Scrum"
+      - "Steigerung der Kundenzufriedenheit durch Einführung von Kundensupport-Systemen und Prozessoptimierung"
+  - name: "Deutsche Bank"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deutsche_Bank_logo_without_wordmark.svg/2048px-Deutsche_Bank_logo_without_wordmark.svg.png"
+    location: "Frankfurt"
+    title: "Prozess Manager"
+    begin: "Jan 2020"
+    end: "Dec 2022"
+    highlights: 
+      - "Implementierung von Automatisierungslösungen, die zu einer Reduzierung der manuellen Eingaben führten und dadurch menschliche Fehler minimierten"
+      - "Einführung von Schulungsprogrammen, die die Kompetenzen der Mitarbeiter verbessert und zur Steigerung der Qualität und Quantität der Arbeitsergebnisse beigetragen haben"
+      - "Erfolgreiche Einführung von Prozessverbesserungsprojekten, die zu einer Reduzierung der Kosten führten"
+  - name: "Lufthansa"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Lufthansa_Logo_%28Crane%29.svg/1200px-Lufthansa_Logo_%28Crane%29.svg.png"
+    location: "Frankfurt"
+    title: "Prozess Manager"
+    begin: "Jan 2020"
+    end: "Dec 2022"
+    highlights: 
+      - "Implementierung von Qualitätsmanagementsystemen, die zur Verbesserung der Produktqualität beigetragen haben"
+      - "Erhöhung der Teamproduktivität durch die Einführung von Arbeitsplatzoptimierungslösungen und Team-Building-Programmen"
+      - "Einführung von Change-Management-Methoden, die zur erfolgreichen Umsetzung von organisatorischen Veränderungen beigetragen haben"
+
+education:
+  - name: "Goethe-Universität Frankfurt"
+    logo: "https://svenk.org/~koeppel/logos/goethe-uni/Goethe-CorporateDesign/Kompakt%20blau.jpg"
+    degree: "Master of Science, BWL"
+    begin: "Jan 2020"
+    end: "Dec 2022"
+    highlights: 
+      - "Thesis: Analyse der Einflussfaktoren auf den Erfolg von agilen Projekten und Entwicklung eines Frameworks zur Bewertung und Verbesserung der agilen Projektleistung"
+  - name: "Frankfurt University of Applied Sciences"
+    logo: "https://avatars.githubusercontent.com/u/11810350?s=200&v=4"
+    degree: "Bachelor of Science, BWL"
+    begin: "Jan 2020"
+    end: "Dec 2022"
+    highlights: 
+      - "Thesis: Erfolgsfaktoren für die Umsetzung von Projekten im Hinblick auf Zeit, Kosten und Qualität"

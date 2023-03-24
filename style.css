@@ -1,0 +1,313 @@
+/*
+Montserrat Font Numbers
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700
+*/
+
+:root {
+    --main: #00CEC0;
+    /*--light: #EEFBFA;*/
+    --light: #dbf6f4;
+}
+
+/* Reset all pre-set styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Set the background color for the whole page to dark grey */
+body {
+    background-color: #333;
+}
+
+/* Set the container for the content to be 210mm wide, centered horizontally, and with a white background */
+.container {
+    width: 210mm;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+}
+
+/* Add styles for the left column */
+.left-column {
+    width: 64mm;
+    background-color: var(--light);
+    padding-top: 5mm;
+    padding-left: 6mm;
+    min-height: 296mm;
+    margin-bottom: 0;
+    /* Add any additional styles for the left column here */
+}
+
+/* Add styles for the right column */
+.right-column {
+    width: 146mm;
+    padding-top: 5mm;
+    padding-right: 5mm;
+    padding-left: 4mm;
+    /* Add any additional styles for the right column here */
+}
+
+.portrait-image {
+    border-radius: 50%;
+    width: 30mm;
+    /* Adjust the width and height as needed */
+    height: 30mm;
+    object-fit: cover;
+    /* This ensures the image fills the entire circle */
+    margin-left: 11mm;
+    margin-top: 4.8mm;
+    /*margin-bottom: 4.5mm;*/
+    object-position: 50% 0%;
+}
+
+.company-info {
+    float: right;
+}
+
+.company-info p {
+    font-size: 8pt;
+    text-align: end;
+}
+
+.company-logo {
+    width: 45mm;
+    height: 9.6mm;
+}
+
+.consultant-info {
+    margin-top: 13mm;
+}
+
+.consultant-name {
+    font-weight: 600;
+    font-size: 24pt;
+}
+
+.consultant-title {
+    font-weight: 500;
+    font-size: 12pt;
+    color: var(--main);
+}
+
+.leftcol-container {
+    margin-top: 8mm;
+}
+
+.leftcol-item {
+    margin-top: 3mm;
+}
+
+.leftcol-item>*,
+.rightcol-title>* {
+    display: inline;
+}
+
+.leftcol-container>h3 {
+    font-weight: 500;
+    font-size: 12pt;
+    margin-bottom: 2mm;
+}
+
+.leftcol-item-icon,
+.rightcol-title-icon {
+    height: 4mm;
+    width: 4mm;
+}
+
+.leftcol-item-badge {
+    height: 8mm;
+    width: 8mm;
+    margin-right: 1mm;
+}
+
+.leftcol-item-text {
+    font-weight: 400;
+    font-size: 10pt;
+
+    max-width: 190px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+
+
+.leftcol-item-icon,
+.leftcol-item-text {
+    vertical-align: top;
+}
+
+
+.leftcol-cert-item {
+    display: flex;
+    align-items: center;
+}
+
+.leftcol-contact-item {
+    margin-top: 1.5mm;
+}
+
+
+.rightcol-cv {
+    margin-top: 15.5mm;
+}
+
+.rightcol-title>h3 {
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.rightcol-item {
+    padding-bottom: 8mm;
+}
+
+.rightcol-item-decoration-circle {
+    height: 2mm;
+    width: 2mm;
+    margin-left: 0.2px;
+    margin-right: 11.5px;
+}
+
+.rightcol-item-decoration-logo {
+    max-height: 8mm;
+    max-width: 8mm;
+    margin-top: 7px;
+
+}
+
+.rightcol-item-decoration,
+.rightcol-item-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rightcol-item-decoration {
+    margin-top: -1mm;
+    width: 8mm;
+    text-align: center;
+}
+
+.rightcol-item-text {
+    width: 126mm;
+    margin-left: 1.1mm;
+    font-weight: 400;
+    font-size: 10pt;
+    hyphens: auto;
+}
+
+.rightcol-title {
+    margin-bottom: 2.6mm;
+    page-break-after: avoid;
+}
+
+.rightcol-item-decoration-line {
+    height: 10mm;
+    width: 0;
+    border-right: 1px solid black;
+    margin-left: 3.3px;
+    margin-top: -4.1px;
+    display: none;
+}
+
+.rightcol-item-text-title>* {
+    display: inline;
+}
+
+.rightcol-item-text-title>h4 {
+    font-weight: 700;
+    font-size: 12pt;
+    font-variant: small-caps;
+    color: var(--main);
+}
+
+.rightcol-item-text-title>p {
+    font-weight: 500;
+    font-size: 10pt;
+}
+
+.rightcol-item-subtitle {
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.rightcol-item-daterange {
+    font-weight: 400;
+    font-size: 9pt;
+    float: right;
+    margin-top: -4mm;
+}
+
+.rightcol-item-list {
+    margin-left: 6mm;
+}
+
+.rightcol-item-list>li {
+    margin-top: 1mm;
+}
+
+
+#profiletext {
+    /*text-align: justify;*/
+    width: 100%;
+    margin-left: 0;
+}
+
+footer {
+    text-align: center;
+    width: 210mm;
+    font-size: 10pt;
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    display: block;
+    background-color: var(--light);
+    margin: 0 auto;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 5mm
+    }
+
+    body
+
+    /*,.left-column */
+        {
+        background-color: white;
+    }
+
+
+    .left-column,
+    .right-column {
+        margin-top: 0;
+    }
+
+    .left-column {
+        padding-left: 3mm;
+    }
+
+    .right-column {
+        padding-right: 0;
+    }
+
+    .portrait-image {
+        margin-left: 13mm;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+}
