@@ -25,6 +25,11 @@ Bold 700
     font-family: 'Montserrat', sans-serif;
 }
 
+b {
+    font-weight: bold;
+    color: #00CEC0;
+}
+
 /* Set the background color for the whole page to dark grey */
 body {
     background-color: #333;
@@ -268,10 +273,18 @@ footer {
     width: 210mm;
     font-size: 10pt;
     padding-top: 2mm;
-    padding-bottom: 2mm;
     display: block;
     background-color: var(--light);
     margin: 0 auto;
+}
+
+#footerbranding {
+    background: white;
+    padding: 8px;
+}
+
+#footercalltoaction {
+    margin-bottom: 10px;
 }
 
 @media print {
