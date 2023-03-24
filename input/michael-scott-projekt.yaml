@@ -4,7 +4,7 @@ email: "michael.scott@fairmar.com"
 tel: "+49 151 / 2353 1883"
 linkedin: "/in/michael-scott-a35b16212"
 location: "Frankfurt"
-portrait: "input/Micheal-Scott/MichaelScott.png"
+portrait: "input/Michael-Scott/MichaelScott.png"
 # portrait: "https://media.licdn.com/dms/image/C5603AQFvja-1mePjwA/profile-displayphoto-shrink_800_800/0/1639152779158?e=2147483647&v=beta&t=2gZG1lCCPUvQ2rsC6GdoaPQIDcNet5BdrPESsj5mRL8"
 
 profile: 
@@ -32,6 +32,8 @@ languages:
     level: 1
 
 certificates:
+  - name: "Bachelor of Science, BWL"
+    badge: "https://cdn-icons-png.flaticon.com/512/1978/1978816.png"
   - name: "Prince2 Foundation"
     badge: "https://images.credly.com/images/e312fee3-7d04-48df-9daf-76d83940cd8a/image.png"
   - name: "AWS Solutions Architect Associate"

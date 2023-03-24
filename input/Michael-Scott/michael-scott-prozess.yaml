@@ -32,6 +32,8 @@ languages:
     level: 1
 
 certificates:
+  - name: "Bachelor of Science, BWL"
+    badge: "https://cdn-icons-png.flaticon.com/512/1978/1978816.png"
   - name: "Prince2 Foundation"
     badge: "https://images.credly.com/images/e312fee3-7d04-48df-9daf-76d83940cd8a/image.png"
   - name: "AWS Solutions Architect Associate"

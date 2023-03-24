@@ -8,6 +8,34 @@ $(document).ready(function () {
         /*$('head').append(`<style>@page{size: 210mm ${$('body').height() + 4}px;}</style>`)*/
     });
 
+
+    /*
+    $.ajax({
+        url: "input/",
+        success: function (data) {
+            $(data).find("a").each(function () {
+                var href = $(this).attr("href")
+                if (href.includes("input/") && !href.includes(".")) {
+
+                    $.ajax({
+                        url: href,
+                        success: function (data) {
+                            //console.log(data)
+                            $(data).find("a:contains(.yaml)").each(function () {
+                                console.log($(this).attr("href"))
+                            })
+                        }
+                    })
+
+
+                }
+            })
+        }
+    })
+    */
+
+
+
     $.ajax({
         url: 'input/',
         success: function (data) {
