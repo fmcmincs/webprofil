@@ -1,8 +1,7 @@
-# Consultant Profile
+# Consultant Profile (v1)
 
 Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `input` ist ein Beispiel-Profil von *Michael Scott* zu finden und ist der Ordner, in dem man arbeiten wird. Im Ordner `output` ist Michaels Profil als PDF zu sehen.
 
-## V1
 
 ## Allgemeine Funktionsweise
 
