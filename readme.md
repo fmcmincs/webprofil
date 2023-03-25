@@ -1,6 +1,7 @@
-# Consultant Profile
+# Consultant Profile (v1)
 
 Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `input` ist ein Beispiel-Profil von *Michael Scott* zu finden und ist der Ordner, in dem man arbeiten wird. Im Ordner `output` ist Michaels Profil als PDF zu sehen.
+
 
 ## Allgemeine Funktionsweise
 
@@ -102,7 +103,7 @@ Beispiel URL:
 
 #### Kommentare
 
-Das Script liest die `.yaml` Datei Zeile für Zeile und konvertiert das gelesen dabei in Programmierobjekte. Es gibt jedoch die Möglichkeit, dem Script zu sagen, dass er gewisse Zeilen überspringt. Dies macht man mit dem Ziffer-Symbol `#` - alles dahinter wird ignoriert.
+Das Script liest die `.yaml` Datei Zeile für Zeile und konvertiert das Gelesene dabei in Programmierobjekte. Es gibt jedoch die Möglichkeit, dem Script zu sagen, dass er gewisse Zeilen überspringt. Dies macht man mit dem Ziffer-Symbol `#` - alles dahinter wird ignoriert.
 
 In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorkommen: einmal mit relativem Pfad und einmal mit einer URL. Dies ist aber nicht weiter problematisch, da eine der beiden Zeilen "auskommentiert" wurden. Hierdurch kann man innerhalb einer Datei zwischen mehreren Bild-Quellen wechseln. 
 
@@ -110,7 +111,7 @@ In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorko
 
 ### Profil-Spezifische Regelungen
 
-- Jeder `key`kommt genau einmal vor, es sei den er ist Teil eines List-Elements.
+- Jeder `key` kommt genau einmal vor, es sei den er ist Teil eines List-Elements.
 - Manche `key`s sind optional und manche nicht.
     - Versuche möglichst alle auszufüllen. 
     - Sollte ein `key` nicht ausgefüllt werden können - beispielsweise wenn man nicht bei LinkedIn angemeldet ist - sollte man den `key` trotzdem stehen lassen und lediglich den `value` leer lassen, also so: `linkedin: ""`.
@@ -120,5 +121,5 @@ In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorko
 - Listen dürfen beliebig viele List-Elemente enthalten.
 - Die Kurzbeschreibung ist Teil des `key`s namens `profile`.
     - Jeder Paragraf ist hier ein List-Item und wird in einer Zeile geschrieben.
-- Bei den `key`s `projects` und `education` handelt es sich um komplexere Objekte, wobei im Grunde die gleichen Regeln gelten wie bisher, es ist nur auch hier wichtig auf die richtige Einrückung zu achten. 
-    - Die `highlights` erwarten eine Liste an Text-`value`s, wovon jedes als ein eigener Punkt im Profil dargestellt.
+- Bei den `key`s `projects` und `education` handelt es sich um komplexere Objekte, wobei im Grunde die gleichen Regeln gelten wie bisher. Es ist nur auch hier wichtig auf die richtige Einrückung zu achten. 
+    - Die `highlights` erwarten eine Liste an Text-`value`s, wovon jedes als ein eigener Punkt im Profil dargestellt wird.

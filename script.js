@@ -52,7 +52,8 @@ $(document).ready(function () {
                         } else {
                             $("#portrait-image").attr('src', `${cv.portrait}`)
                             $("head").append(
-                                `<link rel="icon" type="image/x-icon" href="${cv.portrait}">`
+                                //`<link rel="icon" type="image/x-icon" href="${cv.portrait}">`
+                                `<link rel="icon" type="image/x-icon" href="icons/icon-fairmar.png">`
                             )
                         }
 
