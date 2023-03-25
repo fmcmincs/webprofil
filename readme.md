@@ -2,6 +2,8 @@
 
 Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `input` ist ein Beispiel-Profil von *Michael Scott* zu finden und ist der Ordner, in dem man arbeiten wird. Im Ordner `output` ist Michaels Profil als PDF zu sehen.
 
+## V1
+
 ## Allgemeine Funktionsweise
 
 Das Script `script.js` geht in den Ordner `input` und liest die erste Datei mit Endung `.yaml`, die es findet. Diese Datei enthält die Daten des Profils, die das Script nutzt, um zusammen mit den HTML/CSS Dateien die Webseite zu erstellen, von dem aus man das Profil auch als PDF drucken kann. Die Daten des Profils in einer eigenen Text-Datei auszulagern, ermöglicht es mehrere Profile, oder auch mehrere Versionen desselben Profils, mit einer einheitlichen Struktur und einem einheitlichen Design zu verwalten. Änderungen am Design oder an der Struktur müssen nur an einer zentralen Stelle vorgenommen werden, anstatt separat in jedem einzelnen Profil. Die Profile im neuen Design müssten allerdings neu ausgedruckt werden.
@@ -121,4 +123,4 @@ In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorko
 - Die Kurzbeschreibung ist Teil des `key`s namens `profile`.
     - Jeder Paragraf ist hier ein List-Item und wird in einer Zeile geschrieben.
 - Bei den `key`s `projects` und `education` handelt es sich um komplexere Objekte, wobei im Grunde die gleichen Regeln gelten wie bisher. Es ist nur auch hier wichtig auf die richtige Einrückung zu achten. 
-    - Die `highlights` erwarten eine Liste an Text-`value`s, wovon jedes als ein eigener Punkt im Profil dargestellt.
+    - Die `highlights` erwarten eine Liste an Text-`value`s, wovon jedes als ein eigener Punkt im Profil dargestellt wird.
