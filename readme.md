@@ -110,7 +110,7 @@ In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorko
 
 ### Profil-Spezifische Regelungen
 
-- Jeder `key`kommt genau einmal vor, es sei den er ist Teil eines List-Elements.
+- Jeder `key` kommt genau einmal vor, es sei den er ist Teil eines List-Elements.
 - Manche `key`s sind optional und manche nicht.
     - Versuche möglichst alle auszufüllen. 
     - Sollte ein `key` nicht ausgefüllt werden können - beispielsweise wenn man nicht bei LinkedIn angemeldet ist - sollte man den `key` trotzdem stehen lassen und lediglich den `value` leer lassen, also so: `linkedin: ""`.
@@ -120,5 +120,5 @@ In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorko
 - Listen dürfen beliebig viele List-Elemente enthalten.
 - Die Kurzbeschreibung ist Teil des `key`s namens `profile`.
     - Jeder Paragraf ist hier ein List-Item und wird in einer Zeile geschrieben.
-- Bei den `key`s `projects` und `education` handelt es sich um komplexere Objekte, wobei im Grunde die gleichen Regeln gelten wie bisher, es ist nur auch hier wichtig auf die richtige Einrückung zu achten. 
+- Bei den `key`s `projects` und `education` handelt es sich um komplexere Objekte, wobei im Grunde die gleichen Regeln gelten wie bisher. Es ist nur auch hier wichtig auf die richtige Einrückung zu achten. 
     - Die `highlights` erwarten eine Liste an Text-`value`s, wovon jedes als ein eigener Punkt im Profil dargestellt.
