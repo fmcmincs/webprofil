@@ -102,7 +102,7 @@ Beispiel URL:
 
 #### Kommentare
 
-Das Script liest die `.yaml` Datei Zeile für Zeile und konvertiert das gelesen dabei in Programmierobjekte. Es gibt jedoch die Möglichkeit, dem Script zu sagen, dass er gewisse Zeilen überspringt. Dies macht man mit dem Ziffer-Symbol `#` - alles dahinter wird ignoriert.
+Das Script liest die `.yaml` Datei Zeile für Zeile und konvertiert das Gelesene dabei in Programmierobjekte. Es gibt jedoch die Möglichkeit, dem Script zu sagen, dass er gewisse Zeilen überspringt. Dies macht man mit dem Ziffer-Symbol `#` - alles dahinter wird ignoriert.
 
 In Michaels Profil kann man sehen, dass zwei Zeilen mit dem key `portrait` vorkommen: einmal mit relativem Pfad und einmal mit einer URL. Dies ist aber nicht weiter problematisch, da eine der beiden Zeilen "auskommentiert" wurden. Hierdurch kann man innerhalb einer Datei zwischen mehreren Bild-Quellen wechseln. 
 
