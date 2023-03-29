@@ -27,7 +27,7 @@ In jedem Fall muss man sich den Code herunterladen. Dies geht über den grünen 
 3. Öffne die `.yaml` Datei und versuche den Inhalt nachzuvollziehen.
     - Am besten ist es, sich Visual Studio Code herunterzuladen und sich die Datei darin anzuschauen.
     - Im Kapitel **Profil Formatierung** ist alles im Detail aufgeführt.
-4. Als Beispiel kann man sehen, dass in der Datei unter dem Punkt `portrait` auf das Bild namens `MichaelScott.png` verweist wird. Dieses Bild befindet sich im Unterordner `Michael-Scott`. Da wir uns im Ordner `input` befinden, sieht der volle Verweis folgendermaßen aus: `input/Micheal-Scott/MichaelScott.png`. 
+4. Als Beispiel kann man sehen, dass in der Datei unter dem Punkt `portrait` auf das Bild namens `MichaelScott.png` verwiesen wird. Dieses Bild befindet sich im Unterordner `Michael-Scott`. Da wir uns im Ordner `input` befinden, sieht der volle Verweis folgendermaßen aus: `input/Micheal-Scott/MichaelScott.png`. 
 5. Nachdem alles nachvollzogen wurde, erstelle einen neuen Ordner und gebe ihm deinen Namen.
 6. Nenne die Datei `micheal-scott-projekt.yaml` in deinen Namen um.
 7. Nutze die `.yaml` Datei und den Ordner mit deinem Namen, um dein eigenes Profil zu erstellen.
