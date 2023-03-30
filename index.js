@@ -3,28 +3,32 @@
 
 $(document).ready(function () {
 
-    // Make an AJAX request to get a list of YAML files in the "profile" directory
+    //console.log(window.location.href + "profiles.yaml");
+
+    // Make an AJAX request to get the contents of the "profiles.yaml" file
     $.ajax({
-        url: "profiles/",
-        dataType: 'html',
+        url: window.location.href + "profiles.txt",
+        type: 'GET',
+        dataType: 'text',
         success: function (data) {
-            // Find all the links to YAML files in the returned HTML
-            var links = $(data).find("a[href$='.yaml']")
 
-            // Loop through the links and create buttons for each one
-            var container = $("#links-container")
-            links.each(function () {
-                var linktext = $(this).text().split('.yaml')[0] + ".yaml"
-                var button = $("<button>").text(linktext)
-                button.on("click", function () {
+            //console.log(data)
+            // Split the returned data into an array of file names
+            const yaml_files = data.split('\n')
 
-                    var link = "profile.html?file=" + encodeURIComponent(linktext)
-                    window.location.href = link
+            // Loop through the file names and create buttons for each one
+            const container = $("#links-container")
 
-                })
-                var listItem = $("<li>").append(button)
-                container.append(listItem)
-            })
+            for (const yaml_file of yaml_files) {
+                const filename = yaml_file.trim()
+                if (filename !== '') {
+                    const button = $("<button>").text(filename)
+                    button.on("click", function () {
+                        window.location.href = "profile.html?file=" + encodeURIComponent(filename)
+                    })
+                    container.append($("<li>").append(button))
+                }
+            }
         }
     })
 })
