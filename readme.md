@@ -1,11 +1,11 @@
 # Consultant Profile (v1)
 
-Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `input` ist ein Beispiel-Profil von *Michael Scott* zu finden und ist der Ordner, in dem man arbeiten wird. Im Ordner `output` ist Michaels Profil als PDF zu sehen.
+Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `profiles` sind zwei Beispiel-Profile von *Michael Scott* zu finden. Dies ist der Ordner, in dem wir hauptsächlich arbeiten werden.
 
 
 ## Allgemeine Funktionsweise
 
-Das Script `script.js` geht in den Ordner `input` und liest die erste Datei mit Endung `.yaml`, die es findet. Diese Datei enthält die Daten des Profils, die das Script nutzt, um zusammen mit den HTML/CSS Dateien die Webseite zu erstellen, von dem aus man das Profil auch als PDF drucken kann. Die Daten des Profils in einer eigenen Text-Datei auszulagern, ermöglicht es mehrere Profile, oder auch mehrere Versionen desselben Profils, mit einer einheitlichen Struktur und einem einheitlichen Design zu verwalten. Änderungen am Design oder an der Struktur müssen nur an einer zentralen Stelle vorgenommen werden, anstatt separat in jedem einzelnen Profil. Die Profile im neuen Design müssten allerdings neu ausgedruckt werden.
+Das Script `index.js` geht in den Ordner `profile` und liest die alle Datei mit Endung `.yaml`, die es findet. Diese Dateien enthalten die Daten des Profils, die das Script nutzt, um zusammen mit den HTML/CSS Dateien die Webseite zu erstellen, von dem aus man das Profil auch als PDF drucken kann. Die Daten des Profils in einer eigenen Text-Datei auszulagern, ermöglicht es mehrere Profile, oder auch mehrere Versionen desselben Profils, mit einer einheitlichen Struktur und einem einheitlichen Design zu verwalten. Änderungen am Design oder an der Struktur müssen nur an einer zentralen Stelle vorgenommen werden, anstatt separat in jedem einzelnen Profil. Die Profile im neuen Design müssten allerdings neu ausgedruckt werden.
 
 ## Workflow
 
@@ -13,28 +13,27 @@ Um ein eigenes Profil zu erstellen, kann man sich an dem Beispiel-Profil orienti
 
 1. Man arbeitet nur mit dem text. Siehe hierzu Unterkapitel **Textbasierter Workflow**.
     - Vorteil: unkomplizierte Einrichtung
-    - Nachteil: keine Visualisierungsmöglichkeiten
+    - Nachteil: keine direkte Visualisierungsmöglichkeiten
 2. Man richtig sich seine eigene kleine Umgebung ein. Siehe hierzu Unterkapitel **Webbasierter Workflow**.
-    - Vorteil: die Möglichkeit das Ergebnis anzuzeigen und selbst die PDFs speichern zu können
+    - Vorteil: die Möglichkeit das Ergebnis direkt anzuzeigen und sofort als PDFs speichern zu können
     - Nachteil: höherer Einrichtungsaufwand
 
 In jedem Fall muss man sich den Code herunterladen. Dies geht über den grünen "<> Code" Knopf und von dort aus auf "Download ZIP".
 
 ### Textbasierter Workflow
 
-1. Nachdem die Dateien heruntergeladen und entpackt wurden, navigiere zum Ordner `input`. In diesem befindet sich alles, was man braucht. 
+1. Nachdem die Dateien heruntergeladen und entpackt wurden, navigiere zum Ordner `profiles`. In diesem befindet sich alles, was man braucht. 
 2. Die Datei `micheal-scott-projekt.yaml` ist Michaels Profil in Text-Form.
 3. Öffne die `.yaml` Datei und versuche den Inhalt nachzuvollziehen.
     - Am besten ist es, sich Visual Studio Code herunterzuladen und sich die Datei darin anzuschauen.
     - Im Kapitel **Profil Formatierung** ist alles im Detail aufgeführt.
-4. Als Beispiel kann man sehen, dass in der Datei unter dem Punkt `portrait` auf das Bild namens `MichaelScott.png` verweist wird. Dieses Bild befindet sich im Unterordner `Michael-Scott`. Da wir uns im Ordner `input` befinden, sieht der volle Verweis folgendermaßen aus: `input/Micheal-Scott/MichaelScott.png`. 
-5. Nachdem alles nachvollzogen wurde, erstelle einen neuen Ordner und gebe ihm deinen Namen.
-6. Nenne die Datei `micheal-scott-projekt.yaml` in deinen Namen um.
-7. Nutze die `.yaml` Datei und den Ordner mit deinem Namen, um dein eigenes Profil zu erstellen.
+4. Als Beispiel kann man sehen, dass in der Datei unter dem Punkt `portrait` auf das Bild namens `portrait--michael-scott.png` verwiesen wird. Dieses Bild befindet sich im Unterordner `images`. Da wir uns im Ordner `profiles` befinden, sieht der volle Verweis folgendermaßen aus: `profiles/images/portrait--michael-scott.png`. 
+5. Nachdem alles nachvollzogen wurde, kopiere die Datei `micheal-scott-projekt.yaml` und benenne sie in deinen Namen um.
+6. Nutze die neue `.yaml`-Datei mit deinem Namen um dein eigenes Profil zu erstellen:
     - Achte dabei auf die Formatierungen!
     - Lade nötige Bilder (Badges für Zertifikate oder Firmenlogos für Firmen) herunter und lege sie in den Unterordner mit deinem Namen ab.
-    - Bei Unklarheiten kannst du dir die Datei `Michael-Scott/michael-scott-prozess.yaml` anschauen.
-8. Nachdem alles fertig ist, kannst du den `input` Ordner in eine `.zip` Datei komprimieren und absenden.
+    - Bei Unklarheiten kannst du dir die Beispielprofile anschauen.
+7. Nachdem alles fertig ist, kannst du deine `.yaml`-Datei und zugehörige Bilder absenden.
 
 ### Webbasierter Workflow
 
@@ -43,22 +42,23 @@ In jedem Fall muss man sich den Code herunterladen. Dies geht über den grünen 
 2. In VSC, bei den Icons links klicke auf *Extensions* und gebe in der Suche "Live Server" ein.
     - Finde und installiere die Erweiterung namens "Live Server" von "Ritwick Dey".
 3. In VSC, gehe zurück zum Explorer (oberstes Icon im Reiter links) und öffne den **webprofil** Ordner, den du von hier heruntergeladen und auf deinem PC entpackt hast. (File -> Open Folder...)
-4. Alle Dateien des Projekts müssten nun im linken Panel von VCS zu sehen sein, wie dieses `readme.md`, aber auch der `input` Ordner mit allen Profil-Dateien, usw.
+4. Alle Dateien des Projekts müssten nun im linken Panel von VCS zu sehen sein, wie dieses `readme.md`, aber auch der `profiles` Ordner mit allen Profil-Dateien, usw.
 5. In VSC, in dem blauen Streifen ganz unten auf der rechten Seite müsste sich ein Knopf befinden, auf dem "Go Live" steht. Klicke auf diesen Knopf.
-    - Es wird automatisch die Webseite auf deinem Standardbrowser geöffnet. Alle Änderungen, die jetzt in VSC gemacht und abgespeichert werden, werden automatisch hier angezeigt (es kann sein, dass man den live-server manchmal neu starten muss).
+    - Es wird automatisch die Webseite auf deinem Standardbrowser geöffnet. 
+    - Zuerst wird eine Liste mit allen gefundenen `.yaml`-Dateien im `profiles` Ordner angezeigt, klicke auf das Profil, welches du bearbeiten oder anzeigen möchtest
+    - Alle Änderungen, die jetzt in VSC gemacht und abgespeichert werden, werden automatisch hier angezeigt (es kann sein, dass man den live-server manchmal neu starten muss).
     - Die Profile wurden alle mit **CHROME** entworfen! Um die Einheitlichkeit und Funktionsfähigkeit zu garantieren, sollte entsprechend die neuste Version von Chrome verwendet werden. 
         - Sollte Chrome nicht dein Standardbrowser sein, kannst du den Link herauskopieren und in Chrome öffnen. Dieser müsste etwa so aussehen: `http://127.0.0.1:5500/index.html`
 6. Ist die Seite erst einmal in Chrome geöffnet, drücke `f12`, um dessen Konsole zu öffnen. Hier kommen eventuelle Hinweise und Warnmeldungen.
 8. Gehe nun genau so vor wie im oberen Unterkapitel **Textbasierter Workflow** und beobachte währenddessen das Ergebnis in Chrome. 
-9. Beachte, dass das Script nur die `.yaml` Datei liest, die sich direkt im `input` Ordner befindet. 
-    - Du kannst mehrere Versionen deines Profils erzeugen und sie alle unterschiedlich benennen. Lagere diejenigen, die du aktuell nicht benötigst, in den Unterordner mit deinem Namen ab und ziehe jeweils nur das gewünschte Profil in den `input` Ordner heraus.
+9. Du kannst mehrere Versionen deines Profils erzeugen und sie alle unterschiedlich benennen. 
 10. Nach dem Absenden kannst du auch das Profil vom Browser aus mit `command + P` oder `control + P` als PDF drucken.
     - Lasse die Ränder auf Standard. 
     - Das Häkchen bei Kopf- und Fußzeilen kann weg, jedoch sollten die Hintergrundgrafiken aktiviert bleiben.
 
 ## Profil Formatierung
 
-Dieses Kapitel nutzt `input/Michael-Scott/michael-scott-prozess.yaml` als Beispiel.
+Dieses Kapitel nutzt `profiles/michael-scott-prozess.yaml` als Beispiel.
 
 Die Daten aus den `.yaml` Dateien werden im Script zu Objekten umgewandelt. Es ist daher sehr wichtig, dass die Formatierung eingehalten wird.
 

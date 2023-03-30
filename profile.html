@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Consultant Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="profile.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-column">
+
+      <img src="" alt="Portrait Image" class="portrait-image" id="portrait-image">
+
+      <div class="leftcol-container">
+        <div class="leftcol-item leftcol-contact-item" id="email">
+          <img src="icons/mail.png" alt="Mail Icon" class="leftcol-item-icon">
+          <p class="leftcol-item-text"><a href="" id="emailaddr"></a></p>
+        </div>
+        <div class="leftcol-item leftcol-contact-item" id="tel">
+          <img src="icons/smartphone-call.png" alt="Phone Icon" class="leftcol-item-icon">
+          <p class="leftcol-item-text"><a href="" id="telnum"></a></p>
+        </div>
+        <div class="leftcol-item leftcol-contact-item" id="location">
+          <img src="icons/maps-and-flags.png" alt="Map Icon" class="leftcol-item-icon">
+          <p class="leftcol-item-text" id="locationplace"></p>
+        </div>
+        <div class="leftcol-item leftcol-contact-item" id="linkedin">
+          <img src="icons/linkedin.png" alt="Map Icon" class="leftcol-item-icon">
+          <p class="leftcol-item-text"><a href="" target="_blank" rel="noopener noreferrer" id="linkedin-link"></a></p>
+        </div>
+      </div>
+
+      <div class="leftcol-container" id="skills">
+        <h3>Kompetenzen</h3>
+        <!--
+        <div class="leftcol-item">
+          <img src="icons/skillcircle-8.png" alt="Skill Level Icon" class="leftcol-item-icon">
+          <p class="leftcol-item-text">Cras non hendrerit tellus</p>
+        </div>
+        -->
+      </div>
+
+      <div class="leftcol-container" id="languages">
+        <h3>Sprachen</h3>
+        <!--
+        <div class="leftcol-item">
+          <img src="icons/skillcircle-2.png" alt="Skill Level Icon" class="leftcol-item-icon">
+          <p class="leftcol-item-text">Deutsch</p>
+        </div>
+        -->
+      </div>
+
+      <div class="leftcol-container" id="certificates">
+        <h3>Qualifizierungen</h3>
+        <!--
+        <div class="leftcol-item leftcol-cert-item">
+          <img src="https://images.credly.com/images/e312fee3-7d04-48df-9daf-76d83940cd8a/image.png" alt="Scrum Master PSM I Badge" class="leftcol-item-badge">
+          <p class="leftcol-item-text">Prince2 Foundation</p>
+        </div>
+        -->
+      </div>
+
+    </div>
+    <div class="right-column">
+
+      <div class="company-info">
+        <img src="icons/logo-fairmar.webp" alt="Company Logo" class="company-logo">
+      </div>
+
+      <div class="consultant-info">
+        <h1 class="consultant-name" id="consultant-name"></h1>
+        <h2 class="consultant-title" id="consultant-title"></h2>
+      </div>
+
+      <!-- Profile -->
+      <div class="rightcol-cv">
+
+        <div class="rightcol-section">
+          <div class="rightcol-item" id="profile">
+            <div class="rightcol-item-text" id="profiletext"></div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="rightcol-section" id="projects">
+          <div class="rightcol-title">
+            <!--<img src="icons/suitcase.png" alt="Suitcase Icon" class="rightcol-title-icon">-->
+            <h3>Projekte</h3>
+          </div>
+        </div>
+
+        <!-- Education-->
+        <div class="rightcol-section" id="education">
+          <div class="rightcol-title">
+            <!--<img src="icons/graduation.png" alt="Graduation Icon" class="rightcol-title-icon">-->
+            <h3>Bildung</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footercalltoaction">
+      Für <span id="firstname"></span> Verfügbarkeiten und zur Absprache von Rahmenbedingungen melden Sie sich gerne
+      bei:
+      <br>
+      Hardy Isken, BDM, Fairmar Consulting · <a href="mailto:hardy.isken@fairmar.com">hardy.isken@fairmar.com</a> · <a
+        href="tel:+491711571508">+49 171 1571508</a>
+    </div>
+    <div id="footerbranding">
+      <b> Fairmar Consulting GmbH </b> · Havelstraße 16 · 64295 Darmstadt · <a href="tel:+4961517873288">+49 6151
+        787
+        3288</a> ·
+      <a href="https://www.fairmar.com/" target="_blank" rel="noopener noreferrer">fairmar.com</a>
+    </div>
+  </footer>
+</body>
+
+</html>
