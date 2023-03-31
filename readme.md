@@ -1,6 +1,6 @@
 # Consultant Profile (v1)
 
-Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `profiles` sind zwei Beispiel-Profile von *Michael Scott* zu finden. Dies ist der Ordner, in dem wir hauptsächlich arbeiten werden.
+Dieses Repository enthält den Code, der für die Erstellung des Consultant-Profils genutzt wird. Im Ordner `profiles` sind zwei Beispiel-Profile von *Michael Scott* zu finden. Dies ist der Ordner, in dem wir arbeiten werden.
 
 
 ## Allgemeine Funktionsweise
@@ -31,7 +31,7 @@ In jedem Fall muss man sich den Code herunterladen. Dies geht über den grünen 
 5. Nachdem alles nachvollzogen wurde, kopiere die Datei `micheal-scott-projekt.yaml` und benenne sie in deinen Namen um.
 6. Nutze die neue `.yaml`-Datei mit deinem Namen um dein eigenes Profil zu erstellen:
     - Achte dabei auf die Formatierungen!
-    - Lade nötige Bilder (Badges für Zertifikate oder Firmenlogos für Firmen) herunter und lege sie in den Unterordner mit deinem Namen ab.
+    - Lade nötige Bilder (Badges für Zertifikate oder Firmenlogos für Firmen) herunter und lege sie in den Unterordner `images` ab.
     - Bei Unklarheiten kannst du dir die Beispielprofile anschauen.
 7. Nachdem alles fertig ist, kannst du deine `.yaml`-Datei und zugehörige Bilder absenden.
 

@@ -1,8 +1,30 @@
 'use strict'
 
+let isLocal = false
+if (window.location.href.includes("127.0.0.1")) {
+    console.log(window.location.href)
+    isLocal = true
+}
+
+function readlocally() {
+    const profileList = []
+    $.ajax({
+        url: "profiles/",
+        async: false,
+        success: function (data) {
+            // Find all links to YAML files and write them to a list
+            var yamlFiles = $(data).find("a[href$='.yaml']");
+            yamlFiles.each(function () {
+                profileList.push($(this).text().split('.yaml')[0] + ".yaml")
+            })
+        }
+    })
+    return profileList
+}
+
 $(document).ready(function () {
 
-    //console.log(window.location.href + "profiles.yaml");
+
 
     // Make an AJAX request to get the contents of the "profiles.yaml" file
     $.ajax({
@@ -12,9 +34,11 @@ $(document).ready(function () {
         dataType: 'text',
         success: function (data) {
 
-            //console.log(data)
             // Split the returned data into an array of file names
-            const yaml_files = data.split('\n')
+            let yaml_files = data.split('\n')
+            if (isLocal) {
+                yaml_files = readlocally()
+            }
 
             // Loop through the file names and create buttons for each one
             const container = $("#links-container")
