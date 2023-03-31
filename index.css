@@ -1,0 +1,133 @@
+/*
+Montserrat Font Numbers
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700
+*/
+
+:root {
+    --main: #00CEC0;
+    --white: white;
+    --light: #dbf6f4;
+    --dark: #333;
+    --black: #000;
+}
+
+
+/* Set box-sizing to border-box to include padding and border in element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Set margin and padding to 0 for the body element */
+body {
+    margin: 0;
+    /* add 80px margin to the top */
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+}
+
+/* Set margin to 0 for the header element */
+header {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    height: 66px;
+    /* Set the header height */
+    display: flex;
+    /* Use flexbox for centering the logo vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+
+#companylogo {
+    max-height: 33px;
+}
+
+/* Style the h1 element */
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 48px;
+    color: var(--main);
+}
+
+/* Style the links-container */
+#links-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the link buttons */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style the link buttons on hover */
+button:hover {
+    background-color: var(--dark);
+}
+
+/* Style the upload form */
+#upload-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+input#file-input {
+    display: none;
+}
+
+label#file-label {
+    display: inline-block;
+    background-color: var(--main);
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+label#file-label:hover {
+    background-color: var(--dark);
+}
+
+/* Style the upload button */
+#upload-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style the upload button on hover */
+#upload-button:hover {
+    background-color: var(--dark);
+}
