@@ -1,13 +1,5 @@
 'use strict'
 
-// TODO
-// [ ] make index.html a bit more pretty
-// [ ] pipeline each commit of this stuff automatically into the bucket? 
-//      -- is it worth the trouble?
-// [ ] possible clean up files, so that there isn't so much going on in the root folder
-// [ ] update my own YAML and throw it in there
-// [ ] tell aykut and arthur to throw their YAML in there
-
 $(document).ready(function () {
 
     //console.log(window.location.href + "profiles.yaml");
@@ -41,7 +33,7 @@ $(document).ready(function () {
     })
 
 
-    //take care uploading
+    //take care of uploading
     $('#upload-button').click(function () {
         $('#file-input').click();
     });
